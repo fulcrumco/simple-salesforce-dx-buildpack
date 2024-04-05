@@ -76,6 +76,9 @@ touch $XDG_CACHE_HOME/sfdx/autoupdate
 sfdx --version
 sfdx plugins --core
 
+# Install the texei plugin
+echo y | sfdx plugins:install texei-sfdx-plugin
+
 if command -v sf &> /dev/null
 then
   sf --version
